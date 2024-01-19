@@ -1,3 +1,10 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+}
+
 :root {
 	--size-mobile: 375px;
 	--size-desktop: 1440px;
@@ -26,6 +33,7 @@
 
 body {
 	background-color: var(--clr-eggshell);
+	color: var(--clr-wenge-brown);
 	font-family: var(--fnt-family-sans);
 	line-height: 1.5;
 }
@@ -42,12 +50,22 @@ h2 {
 
 h1 {
 	color: var(--clr-dark-charcoal);
+	font-size: 2.5rem;
+	font-weight: normal;
 }
 
 img {
 	display: block;
 	max-width: 100%;
 	border-radius: var(--border-radius);
+}
+
+hr {
+	color: var(--clr-gray-light);
+}
+
+th {
+	text-align: left;
 }
 
 .container {
@@ -61,4 +79,10 @@ img {
 
 .prep-section {
 	background: var(--clr-rose-white);
+	padding: 1.75rem;
+	border-radius: var(--border-radius);
+}
+
+li span {
+	font-weight: var(--fnt-wgt-bold);
 }
