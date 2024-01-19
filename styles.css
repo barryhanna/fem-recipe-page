@@ -1,0 +1,64 @@
+:root {
+	--size-mobile: 375px;
+	--size-desktop: 1440px;
+
+	--clr-nutmeg: hsl(14, 45%, 36%);
+	--clr-dark-raspberry: hsl(332, 51%, 32%);
+	--clr-white: hsl(0, 0%, 100%);
+	--clr-rose-white: hsl(330, 100%, 98%);
+	--clr-eggshell: hsl(30, 54%, 90%);
+	--clr-gray-light: hsl(30, 18%, 87%);
+	--clr-wenge-brown: hsl(30, 10%, 34%);
+	--clr-dark-charcoal: hsl(24, 5%, 18%);
+
+	--fnt-family-serif: 'Young Serif', serif;
+	--fnt-family-sans: 'Outfit', sans-serif;
+
+	--fnt-wgt-regular: 400;
+	--fnt-wgt-semibold: 600;
+	--fnt-wgt-bold: 700;
+
+	--border-radius: 0.75rem;
+
+	--outer-space: 2.5rem;
+	--inner-space: 2rem;
+}
+
+body {
+	background-color: var(--clr-eggshell);
+	font-family: var(--fnt-family-sans);
+	line-height: 1.5;
+}
+
+.container > * + * {
+	margin-top: var(--inner-space);
+}
+
+h1,
+h2 {
+	font-family: var(--fnt-family-serif);
+	color: var(--clr-dark-raspberry);
+}
+
+h1 {
+	color: var(--clr-dark-charcoal);
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	border-radius: var(--border-radius);
+}
+
+.container {
+	background: var(--clr-white);
+	max-width: 46rem;
+	margin-inline: auto;
+	margin-block: 2rem;
+	padding: var(--outer-space);
+	border-radius: calc(var(--border-radius) * 2);
+}
+
+.prep-section {
+	background: var(--clr-rose-white);
+}
